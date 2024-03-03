@@ -1,0 +1,43 @@
+/* MyNavbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transition: 0.3s;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Hover effect */
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive layout - Bottom Navbar */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      height: auto;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .navbar a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  }
+  
